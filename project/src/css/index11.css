@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .chpctO {
+    position:relative;
+    width: 900px;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 15px;
+   
+  }
+  .chpctO .wrapper {
+    margin-top: 40px;
+    display: flex;
+  }
+  .chpctO .wrapper .qr-method {
+    padding: 0px 80px;
+    position: relative;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    border-right: 0.5px solid rgb(196, 203, 215);
+  }
+  .chpctO .wrapper .method {
+    height: 430px;
+  }
+  
+  .bQZbGl .thpay-channel {
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+  }
+  .bQZbGl .thpay-channel {
+    text-align: center;
+  }
+  .chpctO .wrapper .password-and-mobile-method {
+    padding-left: 50px;
+  }
+  .chpctO .wrapper .method {
+    height: 408px;
+  }
+  .eSqHXk {
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+  }
+  .chpctO .protocol {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .juxDxC {
+    font-size: 12px;
+    color: rgb(179, 179, 179);
+  }
+  .chpctO .protocol {
+    text-align: center;
+  }
+  .hover-orange {
+    cursor: pointer;
+  }
+  .juxDxC {
+    font-size: 12px;
+    color: rgb(179, 179, 179);
+  }
+  .chpctO .protocol {
+    text-align: center;
+  }
+  .chpctO .go-to-register {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    background-image: url("../../public/1.svg");
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: right;
+  }
+  .chpctO .go-to-register span {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    position: relative;
+    top: 10px;
+    right: 7px;
+  }
+  .chpctO .go-to-register {
+    cursor: pointer;
+    text-align: right;
+  }
+  
+  .fvvtrT .login-wrapper {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    flex: 1 1 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .fvvtrT .login-wrapper {
+    height: calc(100% - 60px);
+    min-height: 622px;
+  }
+  .bCMwMe {
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    box-sizing: border-box;
+    height: 60px;
+  }
+  .gxfVWI {
+    padding: 20px 24px;
+    height: 100%;
+    margin: 0px auto;
+    -moz-box-align: center;
+    align-items: center;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .next-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bAkHdY {
+    display: flex;
+  }
+  .next-col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+  }
+  .next-col {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .bAkHdY .logo-link {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .bAkHdY .logo-image {
+    height: 21px;
+    padding-right: 10px;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .bAkHdY .logo-text {
+    font-size: 18px;
+    color: rgb(24, 24, 24);
+    display: inline-block;
+    padding: 0px 10px;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .NQuwj {
+    display: flex;
+    -moz-box-pack: end;
+    justify-content: flex-end;
+  }
+  .next-col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+  }
+  .next-col {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .NQuwj .language-element {
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+    min-width: 80px;
+    height: 22px;
+    margin-left: 12px;
+    color: rgb(153, 153, 153);
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .NQuwj .language-text {
+    position: absolute;
+    font-size: 14px;
+    left: 7px;
+    color: rgb(24, 24, 24);
+    letter-spacing: 0px;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .NQuwj .language-element {
+    color: rgb(153, 153, 153);
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .NQuwj .language-icon {
+    width: 10px;
+    position: absolute;
+    top: -1px;
+    transition: all 0.1s ease 0s;
+    left: 55px;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .next-icon {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: NextIcon;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+  }
+  .NQuwj .language-element {
+    color: rgb(153, 153, 153);
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .next-icon {
+    font-family: NextIcon;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+  }
+  .NQuwj .language-element {
+    color: rgb(153, 153, 153);
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .next-icon.next-xs .next-icon-remote, .next-icon.next-xs::before {
+    font-size: 12px;
+    line-height: inherit;
+    width: 12px;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .next-icon-arrow-down::before {
+    content: "";
+  }
+  .next-icon::before {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .NQuwj .language-choice {
+    position: absolute;
+    padding: 10px 16px;
+    top: 30px;
+    right: -1px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(237, 237, 237);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    min-width: 100px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+  }
+  .next-row, .next-row *, .next-row ::after, .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .NQuwj .language-element {
+    color: rgb(153, 153, 153);
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .fvvtrT .login-wrapper .login-content {
+    display: flex;
+    flex-direction: row;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px auto;
+    width: 1200px;
+    height: 518px;
+  }
+  .fvvtrT .login-wrapper .login-content .marketing-wrapper {
+    cursor: pointer;
+    position: relative;
+    width: 390px;
+    height: 100%;
+    margin-right: 40px;
+    color: transparent;
+    background-color: transparent;
+  }
+  .fvvtrT .login-wrapper .login-content .marketing-wrapper img {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .fvvtrT .login-wrapper .login-content .marketing-wrapper {
+    cursor: pointer;
+    color: transparent;
+  }
+  .fvvtrT .login-wrapper .login-content .marketing-wrapper {
+    cursor: pointer;
+    color: transparent;
+  }
+  .fvvtrT .login-wrapper .login-content .marketing-wrapper .title-header .main-title {
+    margin-top: 100px;
+    display: block;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(24, 24, 24);
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease 0s;
+  }
+  .fvvtrT .login-wrapper .login-content .marketing-wrapper {
+    cursor: pointer;
+    color: transparent;
+  }
+  .fvvtrT .login-wrapper .login-content .marketing-wrapper .title-header .sub-title {
+    text-align: left;
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+    letter-spacing: 0.53px;
+    display: block;
+  }
+  .fvvtrT .login-wrapper .login-content .marketing-wrapper {
+    cursor: pointer;
+    color: transparent;
+  }

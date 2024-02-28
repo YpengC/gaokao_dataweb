@@ -1,0 +1,228 @@
+body {
+    background: #f5f5f6;
+    margin: 0;
+    padding: 0;
+  }
+  body,
+  html {
+    height: 100%;
+  }
+  #root {
+    height: 100%;
+  }
+  .hWQgIp {
+    margin: 0px auto;
+  }
+  .fvvtrT .footer .next-row {
+    border-top: unset;
+    max-width: 1232px;
+  }
+  .hKpitf {
+    flex: 1 1 0%;
+    max-width: 1200px;
+    margin: 0px auto;
+    background: rgb(245, 245, 246);
+    padding-top: 17px;
+    padding-bottom: 0px;
+    border-top: 1px solid rgb(207, 208, 209);
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .next-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .next-col-24 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .next-col {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .hKpitf .about-link-wrap {
+    padding-top: 10px;
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .hKpitf .about-link-wrap > a {
+    line-height: 30px;
+    font-size: 16px;
+    color: rgb(155, 158, 160);
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-right: 35px;
+  }
+  .hKpitf a {
+    text-decoration: none;
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .hKpitf .about-link-wrap > a {
+    line-height: 30px;
+    font-size: 16px;
+    color: rgb(155, 158, 160);
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-right: 35px;
+  }
+  .hKpitf a {
+    text-decoration: none;
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .hKpitf .about-link-wrap > a {
+    line-height: 30px;
+    font-size: 16px;
+    color: rgb(155, 158, 160);
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-right: 35px;
+  }
+  .hKpitf a {
+    text-decoration: none;
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .hKpitf .about-link-wrap > a {
+    line-height: 30px;
+    font-size: 16px;
+    color: rgb(155, 158, 160);
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-right: 35px;
+  }
+  .hKpitf a {
+    text-decoration: none;
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .hKpitf .about-link-wrap > a {
+    line-height: 30px;
+    font-size: 16px;
+    color: rgb(155, 158, 160);
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-right: 35px;
+  }
+  .hKpitf a {
+    text-decoration: none;
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .hKpitf .report-wrap {
+    padding-top: 15px;
+  }
+  .next-row,
+  .next-row *,
+  .next-row ::after,
+  .next-row ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  .fm-field {
+    font-size: 14px;
+  }
+ 
+  .deZZps .tabs-nav {
+    width: 100%;
+    display: flex;
+}
+
+  .deZZps .tabs-nav .tabs-item.active .tabs-item-text {
+    border-bottom: 2px solid rgb(255, 106, 0);
+    color: rgb(255, 106, 0);
+    margin-top: 40px;
+  }
+  .deZZps .tabs-nav .tabs-item .tabs-item-text {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(24, 24, 24);
+    vertical-align: middle;
+  }
+  .deZZps .tabs-nav .tabs-item {
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(115, 119, 122);
+    cursor: pointer;
+  }
+  
+  
+
+.sns-login {
+    display: none
+}

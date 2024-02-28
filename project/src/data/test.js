@@ -1,0 +1,109 @@
+export default [{
+    "university": "中国人民大学",
+    "major": "财政学类",
+    "leibie": "文史",
+    "pici": "一本(A类)",
+    "num": 1,
+    "min": 643,
+    "aver": 643,
+    "max": 643
+}, {
+    "university": "中国人民大学",
+    "major": "法学",
+    "leibie": "文史",
+    "pici": "一本(A类)",
+    "num": 2,
+    "min": 647,
+    "aver": 648,
+    "max": 648
+}, {
+    "university": "中国人民大学",
+    "major": "工商管理类",
+    "leibie": "文史",
+    "pici": "一本(A类)",
+    "num": 4,
+    "min": 643,
+    "aver": 645,
+    "max": 648
+}, {
+    "university": "同济大学",
+    "major": "人文科学试验班",
+    "leibie": "文史",
+    "pici": "一本(A类)",
+    "num": 5,
+    "min": 622,
+    "aver": 625.4,
+    "max": 628
+}, {
+    "university": "同济大学",
+    "major": "社会科学试验班",
+    "leibie": "文史",
+    "pici": "一本(A类)",
+    "num": 3,
+    "min": 622,
+    "aver": 622.67,
+    "max": 624
+}, {
+    "university": "同济大学",
+    "major": "经济管理试验班",
+    "leibie": "文史",
+    "pici": "一本(A类)",
+    "num": 2,
+    "min": 623,
+    "aver": 625.5,
+    "max": 628
+}, {
+    "university": "同济大学",
+    "major": "工科试验班(建筑规划景观与设计类)",
+    "leibie": "文史",
+    "pici": "一本(A类)",
+    "num": 1,
+    "min": 628,
+    "aver": 628,
+    "max": 628
+}, {
+    "university": "同济大学",
+    "major": "经济管理试验班",
+    "leibie": "理工",
+    "pici": "一本(A类)",
+    "num": 4,
+    "min": 641,
+    "aver": 643.5,
+    "max": 648
+}, {
+    "university": "同济大学",
+    "major": "工科试验班(建筑规划景观与设计类)",
+    "leibie": "理工",
+    "pici": "一本(A类)",
+    "num": 8,
+    "min": 644,
+    "aver": 647.25,
+    "max": 651
+}, {
+    "university": "同济大学",
+    "major": "工科试验班(土木与环境类)",
+    "leibie": "理工",
+    "pici": "一本(A类)",
+    "num": 24,
+    "min": 633,
+    "aver": 639.59,
+    "max": 651
+}, {
+    "university": "同济大学",
+    "major": "工科试验班(智能交通与车辆类)",
+    "leibie": "理工",
+    "pici": "一本(A类)",
+    "num": 19,
+    "min": 637,
+    "aver": 640.53,
+    "max": 648
+}, {
+    "university": "同济大学",
+    "major": "工科试验班(智能化制造类)",
+    "leibie": "理工",
+    "pici": "一本(A类)",
+    "num": 17,
+    "min": 632,
+    "aver": 635.96,
+    "max": 640
+}]

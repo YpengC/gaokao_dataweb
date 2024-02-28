@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wms.mapper.MajorMapper">
+
+    <!-- ???????? -->
+    <resultMap id="BaseResultMap" type="com.wms.entity.Major">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="cla" property="cla" />
+        <result column="degree" property="degree" />
+        <result column="arrangement" property="arrangement" />
+        <result column="time" property="time" />
+        <result column="introduce" property="introduce" />
+        <result column="major_specific" property="majorSpecific" />
+        <result column="cost" property="cost" />
+    </resultMap>
+
+
+    <select id="pageCC" resultType="com.wms.entity.Major">
+        select * from major ${ew.customSqlSegment}
+    </select>
+</mapper>

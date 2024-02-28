@@ -1,0 +1,165 @@
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `no` varchar(20) DEFAULT NULL COMMENT '账号',
+  `name` varchar(100) NOT NULL COMMENT '名字',
+  `password` varchar(20) NOT NULL COMMENT '密码',
+  `age` int(11) DEFAULT NULL,
+  `sex` int(11) DEFAULT NULL COMMENT '性别',
+  `phone` varchar(20) DEFAULT NULL COMMENT '电话',
+  `role_id` int(11) DEFAULT NULL COMMENT '角色 0超级管理员，1管理员，2普通账号',
+  `isValid` varchar(4) DEFAULT 'Y' COMMENT '是否有效，Y有效，其他无效',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of user
+-- ----------------------------
+BEGIN;
+INSERT INTO `user` VALUES (1, 'sa', '超级管理员', '123', 18, 1, '111', 0, 'Y');
+COMMIT;
+
+CREATE TABLE `menu` (
+  `id` int(11) NOT NULL,
+  `menuCode` varchar(8) DEFAULT NULL COMMENT '菜单编码',
+  `menuName` varchar(16) DEFAULT NULL COMMENT '菜单名字',
+  `menuLevel` varchar(2) DEFAULT NULL COMMENT '菜单级别',
+  `menuParentCode` varchar(8) DEFAULT NULL COMMENT '菜单的父code',
+  `menuClick` varchar(16) DEFAULT NULL COMMENT '点击触发的函数',
+  `menuRight` varchar(8) DEFAULT NULL COMMENT '权限 0超级管理员，1表示管理员，2表示普通用户，可以用逗号组合使用',
+  `menuComponent` varchar(200) DEFAULT NULL,
+  `menuIcon` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+BEGIN;
+INSERT INTO `menu` VALUES (1, '001', '管理员管理', '1', NULL, 'Admin', '0', 'admin/AdminManage.vue', 'el-icon-s-custom');
+INSERT INTO `menu` VALUES (2, '002', '用户管理', '1', NULL, 'User', '0,1', 'user/UserManage.vue', 'el-icon-user-solid');
+INSERT INTO `menu` VALUES (3, '003', '仓库管理', '1', NULL, 'Storage', '0,1', 'storage/StorageManage', 'el-icon-office-building');
+INSERT INTO `menu` VALUES (4, '004', '物品分类管理', '1', NULL, 'Goodstype', '0,1', 'goodstype/GoodstypeManage', 'el-icon-menu');
+INSERT INTO `menu` VALUES (5, '005', '物品管理 ', '1', NULL, 'Goods', '0,1,2', 'goods/GoodsManage', 'el-icon-s-management');
+INSERT INTO `menu` VALUES (6, '006', '记录管理', '1', NULL, 'Record', '0,1,2', 'record/RecordManage', 'el-icon-s-order');
+COMMIT;
+
+
+DROP TABLE IF EXISTS `storage`;
+CREATE TABLE `storage` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(100) NOT NULL COMMENT '仓库名',
+  `remark` varchar(1000) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `goodsType`;
+CREATE TABLE `goodsType` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(100) NOT NULL COMMENT '分类名',
+  `remark` varchar(1000) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `goods`;
+CREATE TABLE `goods` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(100) NOT NULL COMMENT '货名',
+  `storage` int(11) NOT NULL COMMENT '仓库',
+  `goodsType` int(11) NOT NULL COMMENT '分类',
+  `count` int(11) DEFAULT NULL COMMENT '数量',
+  `remark` varchar(1000) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `record`;
+CREATE TABLE `record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `goods` int(11) NOT NULL COMMENT '货品id',
+  `userId` int(11) DEFAULT NULL COMMENT '取货人/补货人',
+  `admin_id` int(11) DEFAULT NULL COMMENT '操作人id',
+  `count` int(11) DEFAULT NULL COMMENT '数量',
+  `createtime` datetime DEFAULT NULL COMMENT '操作时间',
+  `remark` varchar(1000) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `batch`;
+CREATE TABLE `batch` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `no` varchar(100) DEFAULT NULL COMMENT '名称',
+  `number` varchar(100) NOT NULL COMMENT '会员卡数量',
+  `strategy` varchar(100) DEFAULT NULL COMMENT '策略 0体验卡，1正式卡',
+  `download` varchar(4) DEFAULT 'Y' COMMENT '是否有效，Y有效，其他无效',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `strategy`;
+CREATE TABLE `strategy` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `price` varchar(100) DEFAULT NULL COMMENT '价格',
+  `gqtime` varchar(100) NOT NULL COMMENT '过期时间',
+  `name` int(100) DEFAULT NULL COMMENT '名称 0体验卡，1正式卡',
+  `sytime` varchar(4)DEFAULT NULL COMMENT '试用天数',
+  `payment` varchar(100) DEFAULT NULL COMMENT '是否线下支付 0未支付，1已支付',
+  `type` int(100) DEFAULT NULL COMMENT '策略 0体验卡，1正式卡',
+  `zztime` varchar(100) NOT NULL COMMENT '终止时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `major`;
+CREATE TABLE `major` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `code` varchar(20) DEFAULT NULL COMMENT '专业代码',
+  `name` varchar(100) NOT NULL COMMENT '专业名',
+  `class` varchar(100) DEFAULT NULL COMMENT '专业类',
+  `degree` varchar(100) DEFAULT NULL COMMENT '授予学位',
+  `arrangement` varchar(20) DEFAULT NULL COMMENT '专业层次',
+  `time` varchar(100) DEFAULT NULL COMMENT '修学年限',
+  `introduce` varchar(400) DEFAULT NULL COMMENT '专业介绍',
+  `major_specific` varchar(400) DEFAULT NULL COMMENT '开设具体专业',
+  `school` varchar(100) DEFAULT NULL COMMENT '开设院校',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `school`;
+CREATE TABLE `school` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `city` varchar(20) DEFAULT NULL COMMENT '城市',
+  `type` varchar(20) DEFAULT NULL COMMENT '类型',
+  `zhuguan` varchar(20) DEFAULT NULL COMMENT '主管部门',
+  `name` varchar(100) NOT NULL COMMENT '学校名',
+  `place` varchar(100) DEFAULT NULL COMMENT '位置',
+  `classify` varchar(100) DEFAULT NULL COMMENT '分类',
+  `school_url` varchar(20) DEFAULT NULL COMMENT '官网网址',
+  `phone` varchar(100) DEFAULT NULL COMMENT '官方电话',
+  `email` varchar(400) DEFAULT NULL COMMENT '学校邮箱',
+  `zhongdian` varchar(10) DEFAULT NULL COMMENT '重点学科',
+  `shuoshi` varchar(10) DEFAULT NULL COMMENT '硕士点数',
+  `boshi` varchar(10) DEFAULT NULL COMMENT '博士点数',
+  `yuanshi` varchar(10) DEFAULT NULL COMMENT '院士点数',
+  `cretime` varchar(20) DEFAULT NULL COMMENT '创办年份',
+  `shiyanshi` varchar(20) DEFAULT NULL COMMENT '重点实验室数量',
+  `acreage` varchar(20) DEFAULT NULL COMMENT '占地面积',
+  `book_num` varchar(20) DEFAULT NULL COMMENT '藏书数量',
+  `ranking` varchar(20) DEFAULT NULL COMMENT '全国排名',
+  `visit_num` varchar(20) DEFAULT NULL COMMENT '访问次数',
+  `introduce` varchar(20) DEFAULT NULL COMMENT '介绍',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `majsch`;
+CREATE TABLE `majsch` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `school_name` varchar(100) DEFAULT NULL COMMENT '学校名称',
+  `major_name` varchar(100) DEFAULT NULL COMMENT '专业名称',
+  `major_code` varchar(10) DEFAULT NULL COMMENT '专业代码',
+  `number` varchar(100) NOT NULL COMMENT '招生人数',
+  `province` varchar(30) DEFAULT NULL COMMENT '省份',
+  `major_specific` varchar(400) DEFAULT NULL COMMENT '具体专业',
+  `min_one` varchar(4) DEFAULT NULL COMMENT '第一年最低分数线',
+  `min_two` varchar(4) DEFAULT NULL COMMENT '第二年最低分数线',
+  `min_thire` varchar(4) DEFAULT NULL COMMENT '第三年最低分数线',
+  `cost` varchar(30) DEFAULT NULL COMMENT '学费',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

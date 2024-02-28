@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wms.mapper.MajschMapper">
+
+    <!-- ???????? -->
+    <resultMap id="BaseResultMap" type="com.wms.entity.Majsch">
+        <id column="id" property="id" />
+        <result column="school_name" property="schoolName" />
+        <result column="major_name" property="majorName" />
+        <result column="major_code" property="majorCode" />
+        <result column="number" property="number" />
+        <result column="province" property="province" />
+        <result column="major_specific" property="majorSpecific" />
+        <result column="min_one" property="minOne" />
+        <result column="min_two" property="minTwo" />
+        <result column="min_thire" property="minThire" />
+        <result column="cost" property="cost" />
+    </resultMap>
+
+
+    <select id="pageCC" resultType="com.wms.entity.Majsch">
+        select * from majsch ${ew.customSqlSegment}
+    </select>
+
+    <select id="pageSchool" resultType="com.wms.entity.Majsch">
+        select id,school_name,province,min_one,min_two,min_thire,cost from majsch ${ew.customSqlSegment}
+    </select>
+
+    <select id="pageMajor" resultType="com.wms.entity.Majsch">
+        select id,major_name,major_code,number,major_specific,cost from majsch ${ew.customSqlSegment}
+    </select>
+</mapper>

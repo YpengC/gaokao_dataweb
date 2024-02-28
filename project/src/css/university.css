@@ -1,0 +1,664 @@
+.select1 {
+    width: 92px;
+    height: 32px;
+    font-size: 14px;
+    border: 1px solid #d0d0d0;
+    color: black;
+    font-weight: 400;
+    text-indent: 10px;
+}
+
+.button1 {
+    width: 65px;
+    font-size: 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    text-indent: 10px;
+    height: 31.5px;
+    padding-right: 10px;
+    background: orangered;
+}
+
+.grade-li1 {
+    margin-top: 4px;
+    float: left;
+    margin-left: 10px;
+}
+
+
+
+.information{
+    height:230px;
+    
+}
+
+.information .card {
+    width: 190px;
+    height: 150px;
+    float: left;
+    box-shadow: 0px 0px 13px #e6e6e6;
+    border-radius: 15px;
+    margin-top:20px;
+    margin-left: 0px;
+}
+.information .card-mid {
+    width: 190px;
+    height: 150px;
+    float: left;
+    box-shadow: 0px 0px 13px #e6e6e6;
+    border-radius: 15px;
+    margin-top:20px;
+    margin-left: 80px;
+}
+
+.information .img {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+}
+
+.information .font {
+    font-size: 18px;
+    color: #731297;
+    padding: 0 59px;
+}
+
+.information .font1 {
+    font-size: 18px;
+    color: #731297;
+    text-align: center;
+    padding: 0 69px;
+}
+
+.school-information .university-information {
+    width: 100%;
+    float: left;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border: 1px solid #e6ba81;
+}
+
+.school-information .university-information ul {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 15px 0 0 25px;
+}
+
+.school-information .university-information li {
+    margin: 0 30px 30px 0;
+    height: 13px;
+    line-height: 13px;
+}
+
+.school-information .university-information span {
+    display: inline-block;
+    width: 377px;
+    font-size: 14px;
+    color: #000000;
+    line-height: 25px;
+}
+
+
+.small-majors .salary-box ul {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+
+
+.salary-box li {
+    width: 229px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Microsoft YaHei, SimSun, Arial, sans-serif !important;
+    list-style-type: none;
+}
+
+
+
+
+.jiuye_content ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.jiuye_content ol,
+ul {
+    list-style: none;
+}
+
+.jiuye_content li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+/* 分割线 */
+
+.bodyBackground {
+    background: radial-gradient(#F1FFFD, transparent);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    font-family: "微软雅黑", "arial, helvetica, sans-serif";
+    font-size: 14px;
+    color: #333;
+}
+
+ol,
+ul,
+li {
+    list-style-type: none
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    outline: 0
+}
+
+
+img {
+    display: block;
+    outline: 0;
+    border: 0
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+    font-weight: normal
+}
+
+h1 {
+    font-size: 22px
+}
+
+h2 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+/**查询院校样式**/
+
+.search-table01-l {
+    width: 815px;
+}
+
+.search-table01-l table {
+    text-align: center;
+    width: 100%;
+    color: #55595f;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.search-table01-l table tr {
+    border-bottom: 1px solid #EEEEEE;
+    border-top: 1px solid #EEEEEE;
+}
+
+.search-table01-l table tr .school-icon {
+    width: 80px;
+    text-align: left;
+}
+
+.search-table01-l table tr td {
+    padding: 22px 0;
+    border: none;
+    vertical-align: middle;
+}
+
+.search-table01-l table tr .school-icon img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.search-table01-l table tr .name-des {
+    text-align: left;
+}
+
+.search-table01-l table tr .name-des .top-item {
+    margin-bottom: 20px;
+    height: 26px;
+    line-height: 24px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.search-table01-l table tr .name-des .bottom-item .tag-item {
+    display: inline-block;
+    color: #555555;
+    font-size: 14px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #C5C5C5;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+.search-table01-l table tr .name-des .top-item .link-name {
+    font-size: 18px;
+    color: #000000;
+    height: 100%;
+    display: inline-block;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.search-table01-l table tr .name-des .top-item .link-name .city {
+    height: 26px;
+    line-height: 24px;
+    font-size: 12px;
+    border: 1px solid #EEEEEE;
+    color: #555555;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 20px 0 15px;
+    vertical-align: top;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.float_l {
+    float: left;
+}
+
+.l_title {
+    border-left: 5px solid #fd802c;
+    box-shadow: 0px 0px 15px #e6e6e6;
+    background: #f6fafa;
+}
+
+.video {
+    width: 600px;
+    height: 337px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+/**学校详卡片样式**/
+
+.school_header_bg {
+    width: 815px;
+    height: 250px;
+    position: relative;
+}
+
+.relative-for-liuyan {
+    position: relative;
+    z-index: 32;
+    width: 815px;
+    margin: 0 auto;
+}
+
+.relative-for-liuyan {
+    width: 815px;
+    position: relative;
+    overflow: hidden;
+}
+
+.school {
+    width: 1000px;
+    color: white;
+    padding: 0 10px 10px 10px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.schoolLogo {
+    float: left;
+    margin: 37px 56px 0 32px;
+    width: 220px;
+    height: 220px;
+    padding: 13px;
+    border-radius: 30px;
+    background: white;
+    position: relative;
+}
+
+.schoolName {
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    width: 560px;
+    background-color: transparent !important;
+}
+
+.schoolLogo img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.schoolName .line1 {
+    margin: 21px 0 7px 0;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.schoolName .line1 .line1-schoolName {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.schoolName span {
+    margin-right: 10px;
+}
+
+.l-city {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.l-city .line1-province {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-right: 30px;
+    color: white;
+}
+
+.line2 {
+    width: 1200px;
+}
+
+.line2 .line2_item {
+    float: left;
+    padding: 0px 15px 2px 15px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid white;
+    margin-right: 10px;
+    border-radius: 15px;
+    min-width: 85px;
+    margin-bottom: 4px;
+}
+
+.schoolName .line3 {
+    margin-bottom: 20px;
+}
+
+.line3 .line3_item {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.line3 .line3_item .website {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+    position: relative;
+    top: 2px;
+}
+
+.marginRight25 {
+    margin-right: 25px;
+}
+
+.line3 .line3_item .l-phone {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+    position: relative;
+    top: 2px;
+}
+
+/**院校详情卡片下面样式**/
+
+.schoolintro-box {
+    overflow: visible !important;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.schoolintro-box .introduce_box .introduce_head {
+    margin-bottom: 35px;
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_img_box {
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_img_box .introduce_img {
+    margin: 0 0 0 20px;
+    float: left;
+    border-radius: 10px;
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box {    
+    position: relative;
+    float: right;
+    height: 295px;
+    width: 480px;
+    margin-left: 20px;
+    padding: 20px 20px 20px 20px !important;
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .school_introduce_text {
+    position: relative;
+    width: 480px;
+    padding-top: 10px;
+    padding-right: 25px;
+    font-size: 16px;
+    line-height: 25 px;
+}
+
+/**历年录取分数样式**/
+
+.grade {
+    float: left;
+    width: 1000px;
+    margin: 20px auto;
+    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 14px;
+    color: #444;
+}
+
+table {
+    *border-collapse: collapse;
+    /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.bordered td,
+.bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.bordered td:first-child,
+.bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child {
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+/*----------------------*/
+
+.zebra td,
+.zebra th {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.zebra tbody tr:nth-child(even) {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+}
+
+
+.zebra th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.zebra th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.zebra th:only-child {
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.zebra tfoot td {
+    border-bottom: 0;
+    border-top: 1px solid #fff;
+    background-color: #f1f1f1;
+}
+
+.zebra tfoot td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.zebra tfoot td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.zebra tfoot td:only-child {
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px
+}
+
+.button2 {
+    background: #fff;
+    font-size: 16px;
+    color: #f60;
+    width: 95px;
+    height: 35px;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 45px;
+}
+
+
+

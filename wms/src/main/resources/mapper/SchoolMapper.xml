@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wms.mapper.SchoolMapper">
+
+    <!-- ???????? -->
+    <resultMap id="BaseResultMap" type="com.wms.entity.School">
+        <id column="id" property="id" />
+        <result column="city" property="city" />
+        <result column="type" property="type" />
+        <result column="zhuguan" property="zhuguan" />
+        <result column="name" property="name" />
+        <result column="place" property="place" />
+        <result column="classify" property="classify" />
+        <result column="schoolUrl" property="schoolUrl" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+        <result column="zhongdian" property="zhongdian" />
+        <result column="shuoshi" property="shuoshi" />
+        <result column="boshi" property="boshi" />
+        <result column="yuanshi" property="yuanshi" />
+        <result column="cretime" property="cretime" />
+        <result column="shiyanshi" property="shiyanshi" />
+        <result column="acreage" property="acreage" />
+        <result column="bookNum" property="bookNum" />
+        <result column="ranking" property="ranking" />
+        <result column="visitNum" property="visitNum" />
+        <result column="introduce" property="introduce" />
+    </resultMap>
+
+    <!-- ??????? -->
+    <sql id="Base_Column_List">
+        id, city, type, zhuguan, name,place,classify,schoolUrl,phone,email,zhongdian,shuoshi,boshi,yuanshi,cretime,shiyanshi,acreage,bookNum,ranking,visitNum,introduce
+    </sql>
+
+    <select id="pageC" resultType="com.wms.entity.School">
+        select * from school ${ew.customSqlSegment}
+    </select>
+</mapper>
